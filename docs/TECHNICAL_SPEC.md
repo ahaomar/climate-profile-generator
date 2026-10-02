@@ -49,7 +49,7 @@ climate-profile-generator/
 **Design decisions already locked (approved mockup):**
 
 - Typography: Roboto Condensed everywhere (headings Bold, body Regular, 11pt/16.5 leading). Fonts ship in `fonts/` and are embedded in PDFs.
-- Brand: UN blue `#009EDB` masthead band, dark blue `#03679B` for headings/stats/charts, single hue family.
+- Brand (approved 2 Oct 2026, "Corporate Navy"): deliberately **not** UN blue — the tool is not a UN entity. Masthead `#24356B` (deep navy-indigo), divider `#1B2852`, headings/stats `#1F3A7A`, charts `#3D5A99` with warm-grey `#9A958C` baselines, card fills `#EEF1F8`, borders `#C5CEDF`. Single navy hue family; corporate-international feel.
 - Layout: full-width masthead page 1, slim header bar on later pages, 3 stat cards ("Key Findings"), numbered sections, chart + caption kept together, Sources annex with footnotes.
 - Footer: `Built by Omar Farooq | github.com/ahaomar/climate-profile-generator` + `Generated <date, time> | Page X of Y`.
 

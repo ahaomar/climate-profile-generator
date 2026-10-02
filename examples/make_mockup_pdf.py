@@ -28,10 +28,10 @@ BODY_FONT = "Roboto Condensed"
 HEAD_FONT = "Roboto Condensed Bold"
 
 # ━━ Palette: user-specified UN blue + derived tints (single hue family) ━━
-UN_BLUE = colors.HexColor("#009EDB")     # UN brand blue (user request)
-UN_DARK = colors.HexColor("#03679B")     # headings / stat emphasis (readable on white)
-TABLE_STRIPE = colors.HexColor("#eef6fb")
-BORDER = colors.HexColor("#bcd9ea")
+UN_BLUE = colors.HexColor("#24356B")     # corporate navy masthead (approved 2 Oct 2026)
+UN_DARK = colors.HexColor("#1F3A7A")     # headings / stat emphasis
+TABLE_STRIPE = colors.HexColor("#EEF1F8")
+BORDER = colors.HexColor("#C5CEDF")
 TEXT_PRIMARY = colors.HexColor("#20201d")
 TEXT_MUTED = colors.HexColor("#8b8982")
 
@@ -81,7 +81,7 @@ def on_first(cv, doc):
     cv.saveState()
     cv.setFillColor(UN_BLUE)
     cv.rect(0, PAGE_H - BAND_H, PAGE_W, BAND_H, stroke=0, fill=1)
-    cv.setFillColor(colors.HexColor("#0077B0"))
+    cv.setFillColor(colors.HexColor("#1B2852"))
     cv.rect(0, PAGE_H - BAND_H, PAGE_W, 0.18 * cm, stroke=0, fill=1)
     cv.setFont("Roboto Condensed Bold", 8.5)
     cv.setFillColor(colors.Color(1, 1, 1, alpha=0.75))

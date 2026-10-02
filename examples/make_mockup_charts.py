@@ -10,8 +10,8 @@ for f in pathlib.Path("../fonts").glob("RobotoCondensed-*.ttf"):
     fm.fontManager.addfont(str(f))
 plt.rcParams["font.family"] = "Roboto Condensed"
 
-ACCENT = "#03679B"
-MUTED = "#8b8982"
+ACCENT = "#3D5A99"
+MUTED = "#9A958C"
 TEXT = "#20201d"
 
 years = np.arange(1985, 2025)
