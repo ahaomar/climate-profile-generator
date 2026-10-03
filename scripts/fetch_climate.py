@@ -177,6 +177,12 @@ def fetch_nasa(lon, lat, start, end):
         "monthly_climatology": {
             "temp_c": [round(sum(m) / len(m), 2) for m in months_t],
             "precip_mm_day": [round(sum(m) / len(m), 2) for m in months_r]},
+        # per-year monthly rainfall (mm/day), keyed "YYYYMM" -> value:
+        # lets the chart engine compute a true baseline excluding recent years
+        "monthly_precip_by_year": {
+            str(y): [round(props["PRECTOTCORR"].get("%d%02d" % (y, m), -999), 3)
+                     for m in range(1, 13)]
+            for y in years},
     }
 
 
